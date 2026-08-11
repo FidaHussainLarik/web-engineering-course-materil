@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<!-- Makes the website responsive on phones, tablets, and desktops -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Helps search engines understand the page -->
+<meta
+    name="description"
+    content="Fida Hussain's portfolio - BSCS student and aspiring Full-Stack AI Engineer."
+>
+
+<title>Fida Hussain | Full-Stack AI Engineer</title>
+
+<style>
+    /* =========================================================
+       GLOBAL STYLES
+       ========================================================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family:
+            Arial,
+            Helvetica,
+            sans-serif;
+
+        background-color: #080b12;
+        color: #e6edf3;
+        line-height: 1.7;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+        color: #ffffff;
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        max-width: 700px;
+        color: #9ba7b4;
+        margin-bottom: 50px;
+    }
+
+    .accent {
+        color: #00d4ff;
+    }
+
+
+    /* =========================================================
+       HEADER / NAVIGATION
+       ========================================================= */
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background-color: rgba(8, 11, 18, 0.95);
+        border-bottom: 1px solid #1d2633;
+    }
+
+    .navbar {
+        min-height: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .logo span {
+        color: #00d4ff;
+    }
+
+    .nav-links {
+        list-style: none;
+
+        display: flex;
+        gap: 28px;
+    }
+
+    .nav-links a {
+        color: #b8c2cc;
+        font-size: 0.95rem;
+
+        transition:
+            color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #00d4ff;
+    }
+
+    .menu-button {
+        display: none;
+
+        background: none;
+        border: 1px solid #334155;
+        color: #ffffff;
+
+        padding: 8px 12px;
+        cursor: pointer;
+
+        border-radius: 6px;
+    }
+
+
+    /* =========================================================
+       HERO SECTION
+       ========================================================= */
+
+    .hero {
+        min-height: 90vh;
+
+        display: flex;
+        align-items: center;
+
+        background:
+            radial-gradient(
+                circle at top right,
+                rgba(0, 212, 255, 0.12),
+                transparent 35%
+            );
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .hero-label {
+        display: inline-block;
+
+        padding: 7px 14px;
+        margin-bottom: 20px;
+
+        border: 1px solid #17465a;
+        border-radius: 30px;
+
+        color: #00d4ff;
+        background-color: #0b1a22;
+
+        font-size: 0.85rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        line-height: 1.1;
+        margin-bottom: 25px;
+        color: #ffffff;
+    }
+
+    .hero h1 span {
+        color: #00d4ff;
+    }
+
+    .hero-description {
+        max-width: 680px;
+        color: #aab5c0;
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        display: inline-block;
+
+        padding: 12px 22px;
+
+        border-radius: 7px;
+
+        font-weight: bold;
+
+        transition:
+            transform 0.2s ease,
+            background-color 0.2s ease;
+    }
+
+    .button:hover {
+        transform: translateY(-3px);
+    }
+
+    .button-primary {
+        background-color: #00d4ff;
+        color: #041017;
+    }
+
+    .button-primary:hover {
+        background-color: #35ddff;
+    }
+
+    .button-secondary {
+        border: 1px solid #334155;
+        color: #d7e0e8;
+    }
+
+    .button-secondary:hover {
+        border-color: #00d4ff;
+        color: #00d4ff;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-card {
+        padding: 15px;
+
+        border: 1px solid #243244;
+        border-radius: 20px;
+
+        background-color: #0d131d;
+
+        box-shadow:
+            0 25px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-card img {
+        width: 280px;
+        height: 280px;
+
+        object-fit: cover;
+
+        border-radius: 15px;
+    }
+
+
+    /* =========================================================
+       ABOUT SECTION
+       ========================================================= */
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .about-text p {
+        color: #aab5c0;
+        margin-bottom: 20px;
+    }
+
+    .highlight-box {
+        padding: 30px;
+
+        background-color: #0d131d;
+
+        border: 1px solid #1d2b3b;
+        border-radius: 12px;
+    }
+
+    .highlight-box h3 {
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    .highlight-list {
+        list-style: none;
+    }
+
+    .highlight-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid #1d2633;
+        color: #aab5c0;
+    }
+
+    .highlight-list li:last-child {
+        border-bottom: none;
+    }
+
+
+    /* =========================================================
+       SKILLS
+       ========================================================= */
+
+    .skills-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 25px;
+
+        background-color: #0d131d;
+
+        border: 1px solid #1d2b3b;
+        border-radius: 12px;
+
+        transition:
+            transform 0.3s ease,
+            border-color 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        border-color: #00d4ff;
+    }
+
+    .skill-card h3 {
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .skill-card p {
+        color: #9ba7b4;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .skill-tag {
+        padding: 5px 10px;
+
+        background-color: #111c29;
+
+        border: 1px solid #243548;
+        border-radius: 5px;
+
+        color: #8edff0;
+        font-size: 0.82rem;
+    }
+
+
+    /* =========================================================
+       PROJECTS
+       ========================================================= */
+
+    .projects-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 25px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+
+        padding: 30px;
+
+        background-color: #0d131d;
+
+        border: 1px solid #1d2b3b;
+        border-radius: 14px;
+
+        transition:
+            transform 0.3s ease,
+            border-color 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-7px);
+
+        border-color: #00d4ff;
+
+        box-shadow:
+            0 15px 40px rgba(0, 212, 255, 0.08);
+    }
+
+    .project-number {
+        color: #00d4ff;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 1.35rem;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .project-card p {
+        color: #9ba7b4;
+        margin-bottom: 18px;
+    }
+
+    .project-tech {
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .project-tech span {
+        padding: 5px 9px;
+
+        color: #8edff0;
+
+        background-color: #101b27;
+
+        border-radius: 5px;
+
+        font-size: 0.8rem;
+    }
+
+    .project-link {
+        color: #00d4ff;
+        font-weight: bold;
+    }
+
+    .project-link:hover {
+        text-decoration: underline;
+    }
+
+
+    /* =========================================================
+       ROADMAP
+       ========================================================= */
+
+    .roadmap {
+        border-left: 2px solid #00d4ff;
+        padding-left: 30px;
+    }
+
+    .roadmap-item {
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    .roadmap-item::before {
+        content: "";
+
+        position: absolute;
+
+        left: -39px;
+        top: 7px;
+
+        width: 14px;
+        height: 14px;
+
+        background-color: #00d4ff;
+
+        border-radius: 50%;
+
+        box-shadow:
+            0 0 15px rgba(0, 212, 255, 0.6);
+    }
+
+    .roadmap-item h3 {
+        color: #ffffff;
+        margin-bottom: 8px;
+    }
+
+    .roadmap-item p {
+        color: #9ba7b4;
+    }
+
+
+    /* =========================================================
+       CONTACT
+       ========================================================= */
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .contact-info p {
+        color: #9ba7b4;
+        margin-bottom: 20px;
+    }
+
+    .contact-links {
+        list-style: none;
+    }
+
+    .contact-links li {
+        margin-bottom: 12px;
+    }
+
+    .contact-links a {
+        color: #00d4ff;
+    }
+
+    .contact-form {
+        padding: 30px;
+
+        background-color: #0d131d;
+
+        border: 1px solid #1d2b3b;
+        border-radius: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 7px;
+
+        color: #dce5ec;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+
+        padding: 12px 14px;
+
+        background-color: #080b12;
+
+        border: 1px solid #29384a;
+        border-radius: 6px;
+
+        color: #ffffff;
+
+        font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #00d4ff;
+    }
+
+    .form-group textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .form-message {
+        margin-top: 15px;
+        color: #00d4ff;
+        display: none;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+        padding: 35px 0;
+
+        border-top: 1px solid #1d2633;
+
+        text-align: center;
+
+        color: #718096;
+    }
+
+    footer strong {
+        color: #00d4ff;
+    }
+
+
+    /* =========================================================
+       SCROLL-TO-TOP BUTTON
+       ========================================================= */
+
+    #topButton {
+        position: fixed;
+
+        right: 25px;
+        bottom: 25px;
+
+        width: 45px;
+        height: 45px;
+
+        display: none;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: #00d4ff;
+        color: #041017;
+
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        cursor: pointer;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE DESIGN
+       ========================================================= */
+
+    @media (max-width: 850px) {
+
+        .hero-content,
+        .about-grid,
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero {
+            padding: 80px 0;
+        }
+
+        .hero-image {
+            order: -1;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    @media (max-width: 650px) {
+
+        .nav-links {
+            display: none;
+
+            position: absolute;
+
+            top: 70px;
+            left: 0;
+            right: 0;
+
+            flex-direction: column;
+
+            padding: 20px;
+
+            background-color: #080b12;
+
+            border-bottom: 1px solid #1d2633;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .menu-button {
+            display: block;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+            font-size: 2.7rem;
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            Fida<span>.dev</span>
+        </a>
+
+        <!-- Mobile navigation button -->
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#roadmap">Journey</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div>
+
+                <span class="hero-label">
+                    AI Engineer in Training
+                </span>
+
+                <h1>
+                    Hi, I'm
+                    <span>Fida Hussain.</span>
+                </h1>
+
+                <p class="hero-description">
+                    BSCS student and aspiring Full-Stack AI Engineer
+                    focused on building practical software, data
+                    solutions, and intelligent applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="button button-primary"
+                    >
+                        Explore My Projects
+                    </a>
+
+                    <a
+                        href="https://github.com/FidaHussainLarik"
+                        target="_blank"
+                        rel="noopener"
+                        class="button button-secondary"
+                    >
+                        GitHub Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="profile-card">
+
+                    <img
+                        src="https://github.com/FidaHussainLarik.png"
+                        alt="Fida Hussain GitHub profile photo"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About <span class="accent">Me</span>
+            </h2>
+
+            <p class="section-subtitle">
+                Building strong fundamentals today to create
+                production-ready AI systems tomorrow.
+            </p>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I am Fida Hussain, a BSCS student at
+                        Sukkur IBA University and an aspiring
+                        Full-Stack AI Engineer.
+                    </p>
+
+                    <p>
+                        My journey is focused on progressing from
+                        programming fundamentals toward practical,
+                        production-ready AI systems.
+                    </p>
+
+                    <p>
+                        I am currently strengthening my foundations
+                        in classical machine learning and data
+                        analysis while continuing to develop my
+                        software engineering skills.
+                    </p>
+
+                    <p>
+                        I believe consistent practice, clean code,
+                        reproducible projects, and strong fundamentals
+                        are essential for becoming a better engineer.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-box">
+
+                    <h3>Current Focus</h3>
+
+                    <ul class="highlight-list">
+
+                        <li>
+                            Classical Machine Learning
+                        </li>
+
+                        <li>
+                            Data Analysis with Python
+                        </li>
+
+                        <li>
+                            Full-Stack AI Engineering
+                        </li>
+
+                        <li>
+                            Clean and reproducible projects
+                        </li>
+
+                        <li>
+                            Software engineering fundamentals
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+         ===================================================== -->
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Technical <span class="accent">Skills</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A growing technical foundation across programming,
+                databases, AI, and development tools.
+            </p>
+
+
+            <div class="skills-grid">
+
+
+                <article class="skill-card">
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        Strong foundations in programming and
+                        object-oriented development.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>AI & Data</h3>
+
+                    <p>
+                        Developing practical skills in machine
+                        learning and data analysis.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Jupyter</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Databases</h3>
+
+                    <p>
+                        Working with relational and NoSQL database
+                        concepts.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">ADBMS</span>
+                        <span class="skill-tag">MySQL</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Building frontend fundamentals and learning
+                        how modern web applications are structured.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Developer Tools</h3>
+
+                    <p>
+                        Tools used for coding, experimentation,
+                        version control, and project development.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Google Colab</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Engineering Mindset</h3>
+
+                    <p>
+                        Focused on consistency, problem solving,
+                        documentation, and continuous learning.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Clean Code</span>
+                        <span class="skill-tag">Documentation</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+         ===================================================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured <span class="accent">Projects</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A selection of projects showing my progression
+                through programming, data, AI, and web engineering.
+            </p>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01 / PROJECT
+                    </div>
+
+                    <h3>
+                        Word Frequency & Text Statistics Analyzer
+                    </h3>
+
+                    <p>
+                        A Python-based command-line tool for text
+                        analysis. It computes word frequency and
+                        useful text statistics for basic
+                        NLP-style exploration.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Text Processing</span>
+                        <span>Data Analysis</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/FidaHussainLarik/word-frequency-and-text-statistics-analyzer"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02 / PROJECT
+                    </div>
+
+                    <h3>
+                        AI/ML Journey
+                    </h3>
+
+                    <p>
+                        A learning repository containing Python
+                        fundamentals, data science work, and machine
+                        learning projects built while developing
+                        AI engineering skills.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Jupyter</span>
+                        <span>Machine Learning</span>
+                        <span>Data Science</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/FidaHussainLarik/ai-ml-journey"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03 / PROJECT
+                    </div>
+
+                    <h3>
+                        Brain Gym Python
+                    </h3>
+
+                    <p>
+                        A collection of Python programming practice
+                        and problem-solving exercises created while
+                        strengthening Python fundamentals.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Problem Solving</span>
+                        <span>Programming</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/FidaHussainLarik/brain-gym-python"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        04 / PROJECT
+                    </div>
+
+                    <h3>
+                        Web Engineering Course Material
+                    </h3>
+
+                    <p>
+                        A course repository documenting my journey
+                        through web engineering concepts. This
+                        portfolio grows from the same learning
+                        journey.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web Engineering</span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/FidaHussainLarik/web-engineering-course-materil"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        View Repository →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEARNING JOURNEY
+         ===================================================== -->
+
+    <section id="roadmap" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My <span class="accent">Learning Journey</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A roadmap from programming fundamentals toward
+                full-stack AI engineering.
+            </p>
+
+
+            <div class="roadmap">
+
+                <article class="roadmap-item">
+
+                    <h3>
+                        01. Programming Foundations
+                    </h3>
+
+                    <p>
+                        Strengthening Python, C++, Java, SQL,
+                        object-oriented programming, and
+                        problem-solving skills.
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <h3>
+                        02. Data & Databases
+                    </h3>
+
+                    <p>
+                        Building practical experience with
+                        data analysis, SQL, MongoDB, and
+                        database systems.
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <h3>
+                        03. Machine Learning
+                    </h3>
+
+                    <p>
+                        Developing foundations in classical
+                        supervised and unsupervised machine
+                        learning.
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <h3>
+                        04. Full-Stack Development
+                    </h3>
+
+                    <p>
+                        Learning frontend, backend, APIs,
+                        authentication, databases, and
+                        application architecture.
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <h3>
+                        05. Full-Stack AI Engineering
+                    </h3>
+
+                    <p>
+                        Combining software engineering,
+                        machine learning, APIs, databases,
+                        and user-facing applications into
+                        practical AI products.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Let's <span class="accent">Connect</span>
+            </h2>
+
+            <p class="section-subtitle">
+                Interested in discussing software engineering,
+                AI, machine learning, or potential opportunities?
+                Feel free to reach out.
+            </p>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info">
+
+                    <h3>
+                        Open to opportunities
+                    </h3>
+
+                    <p>
+                        I am interested in opportunities that allow
+                        me to learn, contribute, and grow as a
+                        software and AI engineer.
+                    </p>
+
+                    <ul class="contact-links">
+
+                        <li>
+                            <strong>GitHub:</strong>
+                            <a
+                                href="https://github.com/FidaHussainLarik"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com/FidaHussainLarik
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>LinkedIn:</strong>
+                            <a
+                                href="https://www.linkedin.com/in/fida-hussain-full-stack-ai-engineer/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                LinkedIn Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>Email:</strong>
+                            <a
+                                href="mailto:fidahussainsthp23@gmail.com"
+                            >
+                                fidahussainsthp23@gmail.com
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact form -->
+
+                <form
+                    class="contact-form"
+                    id="contactForm"
+                >
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Your Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Your Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="formMessage"
+                    >
+                        Thanks! This demo form is working on the
+                        frontend. Connect it to a backend or form
+                        service to receive real messages.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            &copy; <span id="year"></span>
+            <strong>Fida Hussain</strong>.
+            All rights reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Scroll-to-top button -->
+
+<button
+    id="topButton"
+    aria-label="Scroll to top"
+>
+    ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+    /*
+     * MOBILE NAVIGATION
+     *
+     * Opens and closes the navigation menu on small screens.
+     */
+
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    /*
+     * CLOSE MOBILE MENU
+     *
+     * When a navigation link is clicked,
+     * close the mobile menu.
+     */
+
+    const navigationLinks =
+        document.querySelectorAll(".nav-links a");
+
+    navigationLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+    /*
+     * CONTACT FORM
+     *
+     * This demonstrates JavaScript form handling.
+     *
+     * IMPORTANT:
+     * This does NOT send an actual email.
+     * A backend or form service is required for that.
+     */
+
+    const contactForm =
+        document.getElementById("contactForm");
+
+    const formMessage =
+        document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        formMessage.style.display = "block";
+
+        contactForm.reset();
+
+    });
+
+
+    /*
+     * CURRENT YEAR
+     *
+     * Automatically displays the current year in the footer.
+     */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /*
+     * SCROLL-TO-TOP BUTTON
+     */
+
+    const topButton =
+        document.getElementById("topButton");
+
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 500) {
+
+            topButton.style.display = "block";
+
+        } else {
+
+            topButton.style.display = "none";
+
+        }
+
+    });
+
+
+    /*
+     * SCROLL TO TOP WHEN BUTTON IS CLICKED
+     */
+
+    topButton.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+</script>
+```
+
+</body>
+
+</html>
