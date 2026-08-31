@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact page to send messages and inquiries."
+    />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <h1>Fida Hussain</h1>
+      <nav>
+        <ul>
+          <li><a href="profile.html">Home</a></li>
+          <li><a href="profile.html#about">About</a></li>
+          <li><a href="profile.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Choose one</option>
+              <option value="inquiry">General Inquiry</option>
+              <option value="project">Project Collaboration</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div>
+            <label>
+              <input type="checkbox" name="terms" required />
+              I accept the terms and conditions
+            </label>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Fida Hussain. All rights reserved.</p>
+      <p>
+        <a href="mailto:fida@example.com">Email Me</a> |
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+          >GitHub Profile</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
