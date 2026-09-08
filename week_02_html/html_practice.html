@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Tutorial</title>
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- HEADER                                            -->
+    <!-- ================================================= -->
+
+    <header>
+        <h1>Semantic HTML Tutorial</h1>
+
+        <p>
+            Welcome! This webpage explains the main semantic
+            HTML tags in an easy way.
+        </p>
+
+        <p>
+            We will learn: header, nav, main, section,
+            article, aside, and footer.
+        </p>
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- NAV                                               -->
+    <!-- ================================================= -->
+
+    <nav>
+        <h2>Navigation</h2>
+
+        <a href="#header">Header</a> |
+        <a href="#nav">Nav</a> |
+        <a href="#main">Main</a> |
+        <a href="#section">Section</a> |
+        <a href="#article">Article</a> |
+        <a href="#aside">Aside</a> |
+        <a href="#footer">Footer</a>
+    </nav>
+
+
+    <!-- ================================================= -->
+    <!-- MAIN                                              -->
+    <!-- ================================================= -->
+
+    <main>
+
+        <h2 id="main">What is Semantic HTML?</h2>
+
+        <p>
+            Semantic HTML means using HTML tags that clearly
+            describe the meaning and purpose of their content.
+        </p>
+
+        <p>
+            For example, instead of using a generic div for
+            everything, we can use header, nav, main, article,
+            section, aside, and footer.
+        </p>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: HEADER                                   -->
+        <!-- ================================================= -->
+
+        <section id="header">
+
+            <h2>&lt;header&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;header&gt; element represents introductory
+                content for a webpage or a section.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;header&gt; to contain introductory
+                information such as a website title, logo,
+                heading, or introduction.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Header = Introduction / Beginning
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website!&lt;/p&gt;
+&lt;/header&gt;
+            </pre>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: NAV                                      -->
+        <!-- ================================================= -->
+
+        <section id="nav">
+
+            <h2>&lt;nav&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;nav&gt; element represents a section
+                containing important navigation links.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;nav&gt; to help users move between
+                important pages or sections of a website.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Nav = Navigation / Where can I go?
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;nav&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About&lt;/a&gt;
+    &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+            </pre>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: MAIN                                     -->
+        <!-- ================================================= -->
+
+        <section id="main">
+
+            <h2>&lt;main&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;main&gt; element contains the main
+                or most important content of the webpage.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;main&gt; to tell the browser and
+                other tools which content is the primary
+                content of the page.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Main = The most important content
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;main&gt;
+    &lt;h1&gt;My Courses&lt;/h1&gt;
+    &lt;p&gt;These are the courses I am studying.&lt;/p&gt;
+&lt;/main&gt;
+            </pre>
+
+            <p>
+                <strong>Important:</strong>
+                A webpage normally has one main element
+                representing its primary content.
+            </p>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: SECTION                                   -->
+        <!-- ================================================= -->
+
+        <section id="section">
+
+            <h2>&lt;section&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;section&gt; element represents a
+                major thematic group of content.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;section&gt; to divide a webpage
+                into meaningful topics or areas.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Section = One topic / One group of content
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;section&gt;
+    &lt;h2&gt;My Education&lt;/h2&gt;
+    &lt;p&gt;I am studying Computer Science.&lt;/p&gt;
+&lt;/section&gt;
+            </pre>
+
+            <p>
+                A webpage might have sections such as
+                About Me, Education, Skills, Projects,
+                and Contact.
+            </p>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: ARTICLE                                   -->
+        <!-- ================================================= -->
+
+        <section id="article">
+
+            <h2>&lt;article&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;article&gt; element represents a
+                self-contained piece of content that could
+                exist independently.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;article&gt; for content such as
+                blog posts, news articles, forum posts,
+                reviews, or other independent content.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Article = One independent piece of content
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;article&gt;
+    &lt;h2&gt;What is HTML?&lt;/h2&gt;
+    &lt;p&gt;HTML creates the structure of webpages.&lt;/p&gt;
+&lt;/article&gt;
+            </pre>
+
+            <h3>Multiple articles:</h3>
+
+            <article>
+                <h4>Article 1: HTML</h4>
+
+                <p>
+                    HTML is used to create the structure
+                    of webpages.
+                </p>
+            </article>
+
+            <article>
+                <h4>Article 2: CSS</h4>
+
+                <p>
+                    CSS is used to style webpages.
+                </p>
+            </article>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: ASIDE                                     -->
+        <!-- ================================================= -->
+
+        <section id="aside">
+
+            <h2>&lt;aside&gt;</h2>
+
+            <p>
+                <strong>Definition:</strong>
+                The &lt;aside&gt; element represents content
+                that is related to the main content but is
+                not part of the primary information.
+            </p>
+
+            <p>
+                <strong>Why do we use it?</strong>
+                We use &lt;aside&gt; for additional information
+                such as related links, tips, author information,
+                or a sidebar.
+            </p>
+
+            <p>
+                <strong>Easy way to remember:</strong>
+                Aside = Extra / Related information
+            </p>
+
+            <h3>Example:</h3>
+
+            <pre>
+&lt;aside&gt;
+    &lt;h3&gt;Did You Know?&lt;/h3&gt;
+    &lt;p&gt;HTML is a markup language.&lt;/p&gt;
+&lt;/aside&gt;
+            </pre>
+
+            <aside>
+                <h3>💡 Quick Tip</h3>
+
+                <p>
+                    &lt;aside&gt; does not necessarily have to
+                    appear visually on the side. CSS controls
+                    its visual position.
+                </p>
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER                                             -->
+    <!-- ================================================= -->
+
+    <footer id="footer">
+
+        <h2>&lt;footer&gt;</h2>
+
+        <p>
+            <strong>Definition:</strong>
+            The &lt;footer&gt; element represents the
+            ending information of a webpage or section.
+        </p>
+
+        <p>
+            <strong>Why do we use it?</strong>
+            We use &lt;footer&gt; for information such as
+            copyright, contact information, author details,
+            or useful links.
+        </p>
+
+        <p>
+            <strong>Easy way to remember:</strong>
+            Footer = Ending / Bottom information
+        </p>
+
+        <h3>Example:</h3>
+
+        <pre>
+&lt;footer&gt;
+    &lt;p&gt;© 2026 Fida Hussain&lt;/p&gt;
+&lt;/footer&gt;
+        </pre>
+
+        <hr>
+
+        <p>
+            © 2026 Fida Hussain — Semantic HTML Tutorial
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
