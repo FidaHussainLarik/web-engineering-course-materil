@@ -1,22 +1,25 @@
-console.log("Hello, World!");
+console.log("\n\n_______________WARM UP______________\n\n")
 
+/*
 
-const name = "Fida Hussain";
-// cannot be reassigned — your default
-let score = 90;
-// var old = "avoid";    // legacy — never use
+## Warm-up (5 min)
 
-console.log("Name:", name);
-console.log("Score:", score);
+        In a new file `warmup.js`, without looking anything up, write and run:
 
+        1. A `const` for your name and a `let` for a score starting at `0`
+        2. A function `double(n)` that returns `n * 2`
+        3. An array of three skill strings; `console.log` the second one
 
+*/
 
+const name = "Fida Hussain Larik"
+let score = 0
 
+function double(n){
+    return n * 2
+}
 
-typeof "text";   // "string"
-typeof 42;       // "number"
-typeof null;     // "object"  ← permanent language bug
-Array.isArray([]); // true — correct array check
-
-5 === "5";   // false — always use ===
-5 ==  "5";   // true  — type coercion. Never rely on this.
+skills = ["Python", "Java", "MySQL","C++", "Machine Learning"]
+for (const [index,skill] of skills.entries()){
+    console.log("Skill number ",index+1,": ",skill)
+}
