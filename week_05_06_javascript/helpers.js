@@ -11,7 +11,5 @@ function getInitials(str){
     return initials
 }
 
-
-
 let result = getInitials("Fida Hussain")
 console.log("Result: ",result)
